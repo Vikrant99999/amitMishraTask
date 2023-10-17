@@ -1,0 +1,168 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Druk+Wide:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arial:ital,wght@1,400&display=swap");
+ */
+
+
+/* <!-- forDrukWideFont --> */
+@import url("https://fonts.cdnfonts.com/css/druk-wide-bold");
+
+/* <!-- forDrukWideFont --> */
+/* <!-- forFontKanit --> */
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+/* <!-- forFontKanit --> */
+
+/* <!-- Dela Gothic One', cursive --> */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kanit&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kanit&family=Titillium+Web:wght@900&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  /* fonts */
+  --font-druk-wide: Druk Wide;
+  --font-arial: Arial;
+  --font-kanit: Kanit;
+
+  /* font sizes */
+  --font-size-2xs: 11px;
+  --font-size-mini: 15px;
+  --font-size-148xl-8: 167.8px;
+  --font-size-base: 16px;
+  --font-size-smi: 13px;
+  --font-size-lg: 18px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-mid: 17px;
+  --font-size-19xl: 38px;
+  --font-size-6xl: 25px;
+
+  /* Colors */
+  --color-gray-100: #7c848c;
+  --color-gray-200: #2c2c2c;
+  --color-black: #000;
+  --brand-green: #c3ff00;
+  --color-white: #fff;
+  --color-darkslategray: #494b4e;
+  --greenColor: #c3ff00;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --nextColor1: #2c2c2c;
+  --nextColor2: #494b4e;
+  --nextColor3: #7c848c;
+  --nextColor4: #1e1e1e;
+  --nextColor5: #c8bfbf;
+
+  /* Border radiuses */
+  --br-sm: 14px;
+  --br-xl: 20px;
+  --br-sm-9: 13.9px;
+  --br-mini: 15px;
+  --br-3xs: 10px;
+  --br-6xs: 7px;
+
+  --Kanit: "Kanit", sans-serif;
+  --DrukWideBold: "Druk Wide Bold, sans-serif";
+  --DelaGothicOne: 'Dela Gothic One';
+  --TitilliumWeb: 'Titillium Web', sans-serif;
+
+
+
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  font-family: var(--Kanit);
+}
+
+a {
+  text-decoration: none;
+  color: var(--whiteColor);
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--greenColor);
+}
+
+
+.mainContent {
+  /* width: 1440px; */
+  /* height: 4574px; */
+  width: 100%;
+
+  height: auto;
+  background-color: var(--nextColor4);
+  position: relative;
+  border: 1px black solid;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  @apply leading-[normal] m-0;
+  font-family: var(--Kanit);
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+.pageTitle {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: var(--brand-green);
+  font-family: Kanit;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 102.5%;
+}
+
+
+.image-preview {
+  max-height: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  gap: 15px;
+}
+label {
+  margin-bottom: 10px;
+}
+
+.image-preview p {
+  padding: 25%;
+  text-align: center;
+}
